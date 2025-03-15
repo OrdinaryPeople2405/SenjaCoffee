@@ -1,0 +1,130 @@
+:root {
+   --black: #000000;
+   --papayawhip: #ffebc7;
+   --lightorange: #ffdab3;
+   --coffee: #6d4e31;
+   --kobicha: #5f3e26;
+
+   --white: #ffffff;
+   --cafenoir: #382400;
+   --sealbrown: #4d2800;
+   --tan: #ceaf92;
+   --dessertsand: #d9b8a0;
+
+   --Headerfont: "Quicksand", sans-serif;
+   --Paragraphfont: "Lato", sans-serif;
+}
+
+.light-theme {
+    --textcolor: var(--black);
+    --backgroundcolor: var(--papayawhip);
+    --primarycolor: var(--lightorange);
+    --secondarycolor: var(--coffee);
+    --accentcolor: var(--kobicha);
+    --adjusticoncolor: var(--white);
+}
+
+.dark-theme {
+    --textcolor: var(--white);
+    --backgroundcolor: var(--cafenoir);
+    --primarycolor: var(--sealbrown);
+    --secondarycolor: var(--tan);
+    --accentcolor: var(--dessertsand);
+    --adjusticoncolor: var(--black);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--backgroundcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10000px;
+}
+
+#navigation {
+    width: 75vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: var(--primarycolor);
+    padding: 10px 25px;
+}
+
+#logo-img {
+    width: 60px;
+    height: auto;
+}
+
+.top-menu, a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    color: var(--textcolor);
+    font-family: var(--Paragraphfont);
+    text-decoration: none; 
+    transition: all 0.4s ease-in-out; 
+}
+
+.top-menu a:hover {
+    transform: translateY(-5px);
+    font-weight: 900;
+}
+
+#hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+    margin: 50px 68px;
+}
+
+.hero-image {
+    width: auto;
+    height: 350px;
+    border-radius: 14px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 450px;
+}
+
+.hero-heading {
+    font-size: 2rem;
+    font-family: var(--Headerfont);
+    color: var(--textcolor);
+}
+
+.hero-description {
+    font-family: var(--Paragraphfont);
+    color: var(--textcolor);
+}
+
+.fas {
+    padding: 15px;
+    border-radius: 100px;
+    background-color: var(--accentcolor);
+    transition: all 0.5s ease-in-out;
+    font-size: 1.5rem;
+    color: var(--adjusticoncolor);
+    transform: rotate(180deg);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.theme-switch input {
+    display: none;
+}
