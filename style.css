@@ -52,6 +52,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-top: 10px;
     border-radius: 10px;
     background-color: var(--primarycolor);
