@@ -85,9 +85,9 @@ body {
 }
 
 #hero-section {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; */
     gap: 100px;
     margin: 50px 68px;
 }
