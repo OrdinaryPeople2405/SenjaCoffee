@@ -232,7 +232,7 @@ a {
     color: var(--textcolor);
 }
 
-::-webkit-scrollbar, ::-webkit-scrollbar-button {
+::-webkit-scrollbar{
     width: 5px;
     border-radius: 10px;
     background-color: var(--accentcolor);
