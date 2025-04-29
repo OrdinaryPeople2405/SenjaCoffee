@@ -5,31 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kopi Senja • About</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Media/favicon-16x16.png">
+    <script src="https://kit.fontawesome.com/53220690f4.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="light-theme">
     <header id="navigation">
-        <figure class="logo">
-            <img src="Media/Logo.png" alt="Logo-Senja-Coffee">
-        </figure>
         <nav class="top-menu">
-            <ul>
-                <a href="Index.html"><li>Home</li></a>
-                <a href="About.html"><li>About</li></a>
-                <a href="Contact.html"><li>Contact</li></a>
-            </ul>
+            <div class="flex-item"><a href="index.html">Home</a></div>
+            <div class="flex-item"><a href="product.html">Product</a></div>
+            <figure class="logo">
+                <img src="Media/Light-logo(new).png" alt="Logo-Senja-Coffee" id="logo-img">
+            </figure>
+            <div class="flex-item"><a href="about.html">About</a></div>
+            <div class="flex-item"><a href="contact.html">Contact</a></div>
+        </nav>
+
+        <nav class="top-menu-mobile">
+            <figure class="logo-mobile">
+                <img src="Media/Light-logo(new).png" alt="Logo-Senja-Coffee" id="logo-img-mobile">
+            </figure>
+
+            <div class="overlay" id="myNav">
+                <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+                <div class="menu-content">
+                    <a href="index.html" class="menu-links">Home</a>
+                    <a href="product.html" class="menu-links">Products</a>
+                    <a href="about.html" class="menu-links">About</a>
+                    <a href="contact.html" class="menu-links">Contact</a>bp-name
+                </div>
+            </div>
+
+            <a href="javascript:void(0)" onclick="openNav()" class="menubtn"><i class="fas fa-bars"></i></a>
         </nav>
     </header>
-    
+
+    <main>
+        <article id="faq-section">
+            <h1 class="faq-headline">Frequently Asked Questions</h1>
+            <section class="faq-content">
+                <details>
+                    <summary class="accordion-title">Is Senja Coffee halal</summary>
+                    <p class="accordion-content">Yes, Senja Coffee is 100% halal, ensuring you can enjoy our beverages
+                        with complete peace of mind. We take pride in offering only the finest ingredients, all sourced
+                        and prepared in accordance with halal standards.</p>
+                </details>
+                <details>
+                    <summary class="accordion-title">Do you offer vegan or dairy-free options?</summary>
+                    <p class="accordion-content">Yes! We offer a variety of plant-based milk options like oat, almond,
+                        and soy, so everyone can enjoy our delicious drinks, no matter their dietary preferences.</p>
+                </details>
+                <details>
+                    <summary class="accordion-title">Can I order Senja Coffee online?</summary>
+                    <p class="accordion-content">Yes, we offer convenient online ordering for both delivery and pickup.
+                        Visit our website or use our app to place your order and enjoy your coffee at home or in the
+                        office.</p>
+                </details>
+                <details>
+                    <summary class="accordion-title">Is Senja Coffee fictitious?</summary>
+                    <p class="accordion-content">Yes, Senja Coffee is just a fictitious website that aims to be the
+                        final project of the developer's education. Which means, all the contents of the website, both
+                        in the form of products and addresses, are fictional.</p>
+                </details>
+            </section>
+        </article>
+    </main>
+
+    <aside>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <i class="fas fa-adjust"></i>
+        </label>
+    </aside>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Media/Light-logo(new).png" alt="Logo-Senja-Coffee" id="logo-img-footer">
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <p class="footer-description">Follow us on:</p>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Kopi Senja. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 

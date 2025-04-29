@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Senja • Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Media/favicon-16x16.png">
+    <script src="https://kit.fontawesome.com/53220690f4.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="light-theme">
+    <header id="navigation">
+        <nav class="top-menu">
+            <div class="flex-item"><a href="index.html">Home</a></div>
+            <div class="flex-item"><a href="product.html">Product</a></div>
+            <figure class="logo">
+                <img src="Media/Light-logo(new).png" alt="Logo-Senja-Coffee" id="logo-img">
+            </figure>
+            <div class="flex-item"><a href="about.html">About</a></div>
+            <div class="flex-item"><a href="contact.html">Contact</a></div>
+        </nav>
+
+        <nav class="top-menu-mobile">
+            <figure class="logo-mobile">
+                <img src="Media/Light-logo(new).png" alt="Logo-Senja-Coffee" id="logo-img-mobile">
+            </figure>
+
+            <div class="overlay" id="myNav">
+                <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+                <div class="menu-content">
+                    <a href="index.html" class="menu-links">Home</a>
+                    <a href="product.html" class="menu-links">Products</a>
+                    <a href="about.html" class="menu-links">About</a>
+                    <a href="contact.html" class="menu-links">Contact</a>
+                </div>
+            </div>
+
+            <a href="javascript:void(0)" onclick="openNav()" class="menubtn"><i class="fas fa-bars"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="coming-soon">
+            On progress. <br>Please come back later.
+        </h1>
+    </main>
+
+    <aside>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <i class="fas fa-adjust"></i>
+        </label>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -5,61 +5,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kopi Senja • Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="Media/Dark-favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Media/favicon-16x16.png">
     <script src="https://kit.fontawesome.com/53220690f4.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="light-theme">
     <header id="navigation">
-        <figure class="logo">
-            <img src="Media/Dark-Logo.png" alt="Logo-Senja-Coffee" id="logo-img">
-        </figure>
         <nav class="top-menu">
-            <div class="flex-item"><a href="Index.html">Home</a></div>
-            <div class="flex-item"><a href="About.html">About</a></div>
-            <div class="flex-item"><a href="Contact.html">Contact</a></div>
+            <div class="flex-item"><a href="index.html">Home</a></div>
+            <div class="flex-item"><a href="product.html">Products</a></div>
+            <figure class="logo">
+                <img src="Media/Light-logo(new).png" alt="Logo-Senja-Coffee" id="logo-img">
+            </figure>
+            <div class="flex-item"><a href="about.html">About</a></div>
+            <div class="flex-item"><a href="contact.html">Contact</a></div>
         </nav>
-        <div>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
+
+        <nav class="top-menu-mobile">
+            <figure class="logo-mobile">
+                <img src="Media/Light-logo(new).png" alt="Logo-Senja-Coffee" id="logo-img-mobile">
+            </figure>
+
+            <div class="overlay" id="myNav">
+                <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+                <div class="menu-content">
+                    <a href="index.html" class="menu-links">Home</a>
+                    <a href="product.html" class="menu-links">Product</a>
+                    <a href="about.html" class="menu-links">About</a>
+                    <a href="contact.html" class="menu-links">Contact</a>
+                </div>
+            </div>
+
+            <a href="javascript:void(0)" onclick="openNav()" class="menubtn"><i class="fas fa-bars"></i></a>
+        </nav>
     </header>
 
     <main>
         <article id="hero-section">
             <section class="hero-text">
-                <h1 class="hero-heading">Roast to boast, taste the utmost.</h1>
+                <h1 class="hero-heading">Roast to boast taste the utmost.</h1>
                 <p class="hero-description">Treat your taste buds to the rich flavors of the archipelago's specialty
                     coffee. Coffee from
                     Indonesia, for the world.
                 </p>
-                <video autoplay muted loop>
-                    <source src = "Media/0316.mp4" type="video/mp4">
-                </video>
+                <div class="order-btn"><a href="#best-products-section">Get Some Cups</a></div>
+            </section>
+            <figure>
+                <img src="Media/two cups of coffee on a brown table surrounded by leaves - tynified.jpg"
+                    alt="Hero-Image" class="hero-image">
+            </figure>
+        </article>
+
+        <article id="best-products-section">
+            <h2 class="bp-headline">Most Sipped, Most loved</h2>
+            <section class="bp-list">
+
+                <div class="best-products">
+                    <img src="Media/Cup Of Cappucino.png" alt="Cappucino" class="bp-image">
+                    <h3 class="bp-description">Cappucino</h3>
+                    <h4 class="bp-description">Rp.18000</h4>
+                    <div class="bp-bottom">
+                        <div class="bp-variant">
+                            <div class="variant-btn">Cold</div>
+                            <div class="variant-btn">Hot</div>
+                        </div>
+                        <div class="add2cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="best-products">
+                    <img src="Media/Caramel-Machiato.png" alt="Caramel-Machiato" class="bp-image">
+                    <h3 class="bp-description">Caramel Machiato</h3>
+                    <h4 class="bp-description">Rp.22000</h4>
+                    <div class="bp-bottom">
+                        <div class="bp-variant">
+                            <div class="variant-btn">Cold</div>
+                            <div class="variant-btn">Hot</div>
+                        </div>
+                        <div class="add2cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="best-products">
+                    <img src="Media/Cup Of Latte.png" alt="Mocha-Latte" class="bp-image">
+                    <h3 class="bp-description">Mocha Latte</h3>
+                    <h4 class="bp-description">Rp.18000</h4>
+                    <div class="bp-bottom">
+                        <div class="bp-variant">
+                            <div class="variant-btn">Cold</div>
+                            <div class="variant-btn">Hot</div>
+                        </div>
+                        <div class="add2cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="best-products">
+                    <img src="Media/cookies-and-cream.jpg" alt="Cookies And Cream" class="bp-image">
+                    <h3 class="bp-description">Cookies & Cream</h3>
+                    <h4 class="bp-description">Rp.21000</h4>
+                    <div class="bp-bottom">
+                        <div class="bp-variant">
+                            <div class="variant-btn">Cold</div>
+                            <div class="variant-btn">Hot</div>
+                        </div>
+                        <div class="add2cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
             </section>
         </article>
-
-        <article id="">
-
-        </article>
     </main>
+
     <aside>
         <label class="theme-switch">
             <input type="checkbox">
             <i class="fas fa-adjust"></i>
         </label>
     </aside>
-    <footer>
 
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Media/Light-logo(new).png" alt="Logo-Senja-Coffee" id="logo-img-footer">
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <p class="footer-description">Follow us on:</p>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Kopi Senja. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 

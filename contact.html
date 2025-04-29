@@ -5,31 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kopi Senja • Contact</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Media/favicon-16x16.png">
+    <script src="https://kit.fontawesome.com/53220690f4.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="light-theme">
     <header id="navigation">
-        <figure class="logo">
-            <img src="Media/Logo.png" alt="Logo-Senja-Coffee">
-        </figure>
         <nav class="top-menu">
-            <ul>
-                <a href="Index.html"><li>Home</li></a>
-                <a href="About.html"><li>About</li></a>
-                <a href="Contact.html"><li>Contact</li></a>
-            </ul>
+            <div class="flex-item"><a href="index.html">Home</a></div>
+            <div class="flex-item"><a href="product.html">Product</a></div>
+            <figure class="logo">
+                <img src="Media/Light-logo(new).png" alt="Logo-Senja-Coffee" id="logo-img">
+            </figure>
+            <div class="flex-item"><a href="about.html">About</a></div>
+            <div class="flex-item"><a href="contact.html">Contact</a></div>
+        </nav>
+
+        <nav class="top-menu-mobile">
+            <figure class="logo-mobile">
+                <img src="Media/Light-logo(new).png" alt="Logo-Senja-Coffee" id="logo-img-mobile">
+            </figure>
+
+            <div class="overlay" id="myNav">
+                <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+                <div class="menu-content">
+                    <a href="index.html" class="menu-links">Home</a>
+                    <a href="product.html" class="menu-links">Products</a>
+                    <a href="about.html" class="menu-links">About</a>
+                    <a href="contact.html" class="menu-links">Contact</a>
+                </div>
+            </div>
+
+            <a href="javascript:void(0)" onclick="openNav()" class="menubtn"><i class="fas fa-bars"></i></a>
         </nav>
     </header>
-    
+
+    <main>
+        <article id="contact-section">
+            <section class="message-section">
+                <h1 class="message-headline">Contact Us</h1>
+                <p class="mheadline-desc">For coffee chats or business talk,
+                    Just send a note—we love to walk the walk.</p>
+                <div class="message-form">
+                    <form onsubmit="return validateForm()"> 
+                        <input type="text" id="name" name="name" placeholder="Your Name...">
+                        <input type="email" id="email" name="email" placeholder="Example@provider.com">
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Your message here—make it clear!"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="map-section">
+                <h1 class="map-headline">Find Us Here 👇</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2728226543986!2d106.80582227413132!3d-6.227716260989121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f126734d1141%3A0xe32edf265e83595a!2sPacific%20Century%20Place!5e0!3m2!1sen!2sid!4v1745546259095!5m2!1sen!2sid"
+                    width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </article>
+    </main>
+
+    <aside>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <i class="fas fa-adjust"></i>
+        </label>
+    </aside>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Media/Light-logo(new).png" alt="Logo-Senja-Coffee" id="logo-img-footer">
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <p class="footer-description">Follow us on:</p>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Kopi Senja. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 
