@@ -232,12 +232,24 @@ a {
     color: var(--textcolor);
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--backgroundcolor);
+    text-align: center;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primarycolor);
+    border-radius: 10px;
+    margin: 5px 0;
+    box-shadow: inset 0px 0px 5px var(--backgroundcolor);
+    -webkit-box-shadow: inset 0px 0px 5px var(--backgroundcolor);
+}
+
 ::-webkit-scrollbar-thumb {
     background-color: var(--accentcolor);
     border-radius: 10px;
     width: 3.5px;
-    position: relative;
-    right: 5px;
 }
 
 
