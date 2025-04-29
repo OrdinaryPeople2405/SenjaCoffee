@@ -234,7 +234,7 @@ a {
 
 ::-webkit-scrollbar {
     width: 5px;
-    background-color: var(--textcolor);
+    background-color: var(--adjusticoncolor);
     border-radius: 10px;
 }
 
