@@ -232,11 +232,13 @@ a {
     color: var(--textcolor);
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
     width: 5px;
-    background-color: var(--adjusticoncolor);
-    border-radius: 10px;
+    background-color: var(--accentcolor);
+    color: var(--textcolor);
 }
+
+
 
 #faq-section {
     margin-top: 125px;
