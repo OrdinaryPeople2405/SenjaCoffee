@@ -232,13 +232,16 @@ a {
     color: var(--textcolor);
 }
 
-::-webkit-scrollbar{
-    width: 5px;
+::-webkit-scrollbar {
+    width: 2px;
     border-radius: 10px;
     background-color: var(--accentcolor);
-    color: var(--textcolor);
 }
 
+::-webkit-scrollbar-thumb {
+    background-color: var(--textcolor);
+    border-radius: 10px;
+}
 
 
 #faq-section {
