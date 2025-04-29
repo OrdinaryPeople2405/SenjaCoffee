@@ -26,9 +26,9 @@ function validateForm() {
   const message = document.getElementById("message").value;
   if (name == "" && email == "" && message == "") {
     alert("Every field helps us help you — complete them all before you're through!");
-    return false;
+    return;
   } else {
     alert("All filled in let the chat begin");
-    return true;
+    return;
   }
 }
