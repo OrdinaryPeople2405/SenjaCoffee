@@ -24,7 +24,7 @@ function validateForm() {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
-  if (name == "" && email == "" && message == "") {
+  if (name == "" || email == "" || message == "") {
     alert("Every field helps us help you — complete them all before you're through!");
     return;
   } else {
